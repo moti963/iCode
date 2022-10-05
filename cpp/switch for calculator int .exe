@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main(void)
+{ int choice,a,b;
+
+printf("\n '1 for Add(+)' '2 for Sub(-)' '3 for Mult' '4 for Div' ");
+scanf("%d", & choice);
+ printf("Type No1: ");
+    scanf("%lf", &a);
+    printf("Type No2: ");
+    scanf("%lf", &b);
+    
+    switch(choice){
+    	case 1:  printf("%lf + %lf = %lf",a,b,a+b); break;
+    	case 2: printf("%lf - %lf = %lf",a,b,a-b); break
+        case 3: printf("%lf * %lf = %lf",a,b,a*b); break;
+        case 4:printf("%lf / %lf = %lf",a,b,a/b); break;
+        degault : printf("/nIncorrect Choice\n"); break;}
+        
+printf("\n***********************************************\n");
+}
