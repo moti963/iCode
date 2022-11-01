@@ -5,9 +5,19 @@ using namespace std;
 
 void solvehere()
 {
-    int m, n;
-    cin >> m >> n;
-    cout << (m * n) / 2 << "\n";
+    ll n, m, k;
+    cin >> n >> m >> k;
+    vector<ll> card(n);
+    for (ll i = 0; i < n; i++)
+    {
+        cin >> card[i];
+    }
+    sort(card.begin(), card.end());
+    ll temp = m / (k + 1);
+    ll rem = m % (k + 1);
+    ll first = ((temp * k) + rem) * card[n - 1];
+    ll second = temp * card[n - 2];
+    cout << first + second;
 }
 int main()
 {

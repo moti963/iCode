@@ -20,25 +20,27 @@ int main()
     ll n, m, a;
     cin >> n >> m >> a;
 
-    if (n % a == 0 && m % a == 0)
-    {
-        cout << (n * m) / (a * a);
-        return 0;
-    }
-    if (n % a != 0 && m % a == 0)
-    {
-        cout << ((n / a) + 1) * (m / a);
-        return 0;
-    }
-    if (n % a == 0 && m % a != 0)
-    {
-        cout << ((m / a) + 1) * (n / a);
-        return 0;
-    }
+    // if (n % a == 0 && m % a == 0)
+    // {
+    //     cout << (n * m) / (a * a);
+    //     return 0;
+    // }
+    // if (n % a != 0 && m % a == 0)
+    // {
+    //     cout << ((n / a) + 1) * (m / a);
+    //     return 0;
+    // }
+    // if (n % a == 0 && m % a != 0)
+    // {
+    //     cout << ((m / a) + 1) * (n / a);
+    //     return 0;
+    // }
 
-    if (n % a != 0 && m % a != 0)
-    {
-        cout << ((n / a) + 1) * ((m / a) + 1);
-        return 0;
-    }
+    // if (n % a != 0 && m % a != 0)
+    // {
+    //     cout << ((n / a) + 1) * ((m / a) + 1);
+    //     return 0;
+    // }
+    ll ans = ((n + a - 1) / a) * ((m + a - 1) / a);
+    cout << ans;
 }

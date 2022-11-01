@@ -5,9 +5,16 @@ using namespace std;
 
 void solvehere()
 {
-    int m, n;
-    cin >> m >> n;
-    cout << (m * n) / 2 << "\n";
+    int num[3];
+    cin >> num[0] >> num[1] >> num[2];
+    sort(num, num + 3);
+    if (num[1] != num[2])
+    {
+        cout << "NO\n";
+        return;
+    }
+    cout << "YES\n";
+    cout << num[0] << " " << num[0] << " " << num[2] << "\n";
 }
 int main()
 {
@@ -20,7 +27,7 @@ int main()
     //#endif
 
     ll ttt = 1;
-    // cin>>ttt;
+    cin >> ttt;
     while (ttt--)
     {
         solvehere();

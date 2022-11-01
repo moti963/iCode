@@ -5,9 +5,18 @@ using namespace std;
 
 void solvehere()
 {
-    int m, n;
-    cin >> m >> n;
-    cout << (m * n) / 2 << "\n";
+    ll a, b, s;
+    cin >> a >> b >> s;
+    ll minStep = abs(a) + abs(b);
+
+    if (minStep <= s && (s - minStep) % 2 == 0)
+    {
+        cout << "Yes";
+    }
+    else
+    {
+        cout << "No";
+    }
 }
 int main()
 {

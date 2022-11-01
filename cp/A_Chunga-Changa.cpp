@@ -5,9 +5,22 @@ using namespace std;
 
 void solvehere()
 {
-    int m, n;
-    cin >> m >> n;
-    cout << (m * n) / 2 << "\n";
+    ll x, y, z;
+    cin >> x >> y >> z;
+    // ll buy = (x / z) + (y / z);
+    ll buy = (x + y) / z;
+    // cout << buy << "\n";
+    x %= z;
+    y %= z;
+    // cout << x << "\n";
+    // cout << y << "\n";
+    ll deb = 0;
+    if (x + y >= z)
+    {
+        // buy += ((x + y) / z);
+        deb = z - max(x, y);
+    }
+    cout << buy << " " << deb;
 }
 int main()
 {

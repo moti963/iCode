@@ -5,9 +5,18 @@ using namespace std;
 
 void solvehere()
 {
-    int m, n;
-    cin >> m >> n;
-    cout << (m * n) / 2 << "\n";
+    ll coins[3], n;
+    cin >> coins[0] >> coins[1] >> coins[2] >> n;
+    sort(coins, coins + 3);
+    ll temp = n + coins[0] + coins[1] - (2 * coins[2]);
+    if (temp >= 0 && temp % 3 == 0)
+    {
+        cout << "YES\n";
+    }
+    else
+    {
+        cout << "NO\n";
+    }
 }
 int main()
 {
@@ -20,7 +29,7 @@ int main()
     //#endif
 
     ll ttt = 1;
-    // cin>>ttt;
+    cin >> ttt;
     while (ttt--)
     {
         solvehere();
