@@ -5,9 +5,20 @@ using namespace std;
 
 void solvehere()
 {
-    int m, n;
-    cin >> m >> n;
-    cout << (m * n) / 2 << "\n";
+    int n, m;
+    cin >> n >> m;
+    if (n == 1)
+    {
+        cout << 0 << "\n";
+    }
+    else if (n == 2)
+    {
+        cout << m << "\n";
+    }
+    else
+    {
+        cout << (2 * m) << "\n";
+    }
 }
 int main()
 {
@@ -20,7 +31,7 @@ int main()
     //#endif
 
     ll ttt = 1;
-    // cin>>ttt;
+    cin >> ttt;
     while (ttt--)
     {
         solvehere();

@@ -5,9 +5,17 @@ using namespace std;
 
 void solvehere()
 {
-    int m, n;
-    cin >> m >> n;
-    cout << (m * n) / 2 << "\n";
+    int k, r;
+    cin >> k >> r;
+    for (int i = 1; i <= 9; i++)
+    {
+        if ((i * k) % 10 == 0 || (i * k) % 10 == r)
+        {
+            cout << i << "\n";
+            return;
+        }
+    }
+    return;
 }
 int main()
 {

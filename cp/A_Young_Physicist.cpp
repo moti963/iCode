@@ -5,9 +5,26 @@ using namespace std;
 
 void solvehere()
 {
-    int m, n;
-    cin >> m >> n;
-    cout << (m * n) / 2 << "\n";
+    int n;
+    cin >> n;
+
+    int sx = 0, sy = 0, sz = 0;
+    for (int i = 0; i < n; i++)
+    {
+        int x, y, z;
+        cin >> x >> y >> z;
+        sx += x;
+        sy += y;
+        sz += z;
+    }
+    if (sx == 0 && sz == 0 && sz == 0)
+    {
+        cout << "YES";
+    }
+    else
+    {
+        cout << "NO";
+    }
 }
 int main()
 {

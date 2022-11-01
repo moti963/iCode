@@ -5,9 +5,12 @@ using namespace std;
 
 void solvehere()
 {
-    int m, n;
-    cin >> m >> n;
-    cout << (m * n) / 2 << "\n";
+    ll n, k;
+    cin >> n >> k;
+    ll mult = (n + k - 1) / k;
+    ll temp = k * mult;
+    ll ans = (temp + n - 1) / n;
+    cout << ans << "\n";
 }
 int main()
 {
@@ -20,7 +23,7 @@ int main()
     //#endif
 
     ll ttt = 1;
-    // cin>>ttt;
+    cin >> ttt;
     while (ttt--)
     {
         solvehere();

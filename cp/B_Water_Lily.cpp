@@ -5,9 +5,10 @@ using namespace std;
 
 void solvehere()
 {
-    int m, n;
-    cin >> m >> n;
-    cout << (m * n) / 2 << "\n";
+    ll h, l;
+    cin >> h >> l;
+    double ans = (double)((l * l) - (h * h)) / (double)(2 * h);
+    cout << setprecision(13) << ans;
 }
 int main()
 {

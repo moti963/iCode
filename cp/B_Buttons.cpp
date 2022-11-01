@@ -5,9 +5,22 @@ using namespace std;
 
 void solvehere()
 {
-    int m, n;
-    cin >> m >> n;
-    cout << (m * n) / 2 << "\n";
+    int n;
+    cin >> n;
+    if (n == 1)
+    {
+        cout << n;
+    }
+    else
+    {
+        int total = 1 + n;
+        for (int i = 2; i < n; i++)
+        {
+            int remain = (n - i + 1);
+            total += (remain * (i - 1)) + 1;
+        }
+        cout << total;
+    }
 }
 int main()
 {

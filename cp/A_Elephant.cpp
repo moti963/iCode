@@ -11,6 +11,10 @@ int main()
     fastio();
     int x;
     cin >> x;
+
+    cout << (x + 4) / 5 << "\n";
+    // Old Approach
+    /*
     int step = 0, st = 0;
     while (x >= 5)
     {
@@ -39,5 +43,6 @@ int main()
     }
 
     cout << step << "\n";
+    */
     return 0;
 }
