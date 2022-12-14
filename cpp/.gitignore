@@ -1,11 +1,11 @@
-.cph
+*/.cph/
+/.cph
 
 .vscode
 .git
 
 *.exe
 
-.gitignore
 
 README.md
 
