@@ -1,4 +1,6 @@
+*/.cph
 /.cph
+/.cph/*
 
 .cph
 .vscode
@@ -8,7 +10,7 @@
 
 *.exe
 
-.gitignore
+
 
 README.md
 
